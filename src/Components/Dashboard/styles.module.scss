@@ -1,0 +1,29 @@
+.dahsboard {
+    margin-top: 30px;
+    margin-left: 50px;
+
+    .ocuppancy {
+        font-size: 18px;
+        color: rgb(95, 95, 95);
+        font-weight: 600;
+        margin: 3px;
+    }
+
+    .percentage {
+        font-size: 18px;
+        color: rgb(95, 95, 95);
+        font-weight: 600;
+        margin: 3px;
+        span{
+            font-size: 25px;
+            font-weight: 700;
+
+        }
+    }
+
+    .pieChart {
+        padding: 30px;
+
+    }
+
+}

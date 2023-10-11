@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navLink {
+  color: #233865;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px; 
+  padding-right: 30px;
+}
+
+.navLink:hover {
+  color: rgb(0, 60, 255); /* Change the color on hover */
+}
+
+.navLink.active {
+  color: rgb(25, 3, 122); /* Change the color for the active tab */
+  font-weight: bold; /* Optionally, make the active tab bold */
+  border-bottom: 2px solid yellow; /* Optionally, add a bottom border for emphasis */
+}
+.siteLayout{
+background: hsl(0, 0%, 100%);
+
+}
+.sitelayoutbackground{
+  padding: 10px 0 50px 20px;
+  background: hsl(0, 0%, 98%);
+  color: black;
+  height: 150px;
+
+
+}
+.navLinkh1{
+  color: #233865;
 }
