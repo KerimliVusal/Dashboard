@@ -1,8 +1,8 @@
 .dahsboard {
     display: flex;
     justify-content: center;
-    height: 100%;
     overflow: hidden;
+    height: 100%;
     .ocuppancy {
         font-size: 21px;
         color: rgb(0, 15, 86);
@@ -74,35 +74,35 @@ overflow: hidden;
     .criteria {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
 
     }
 
-    .notMet span {
-        text-align: right;
+    .notMet span p{
+        text-align: center;
         color: red;
         background-color: #d7d6d6;
         padding: 5px;
-        font-size: 20px;
+        font-size: 16px;
         margin-left: 100px;
     }
 
-    .Met span {
-        text-align: right;
+    .Met span p{
+        text-align: center;
         color: rgb(2, 159, 43);
-        text-align: right;
         background-color: #d7d6d6;
         padding: 5px;
-        font-size: 20px;
+        font-size: 16px;
         margin-left: 100px;
     }
 
     .guidelines {
-        font-size: 20px;
+        font-size: 16px;
         color: rgb(95, 95, 95);
         font-weight: 600;
         text-align: left;
         padding-left: 20px;
+        white-space: nowrap;
     }
 
     .office {
@@ -129,6 +129,6 @@ overflow: hidden;
 
     }
     .guidelineicon{
-        font-size: 32px;
+        font-size: 20px;
     }
 }

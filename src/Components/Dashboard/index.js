@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { Row, Col, Progress, Card, Typography, Space } from 'antd';
 import { BarChartOutlined, RedditOutlined } from '@ant-design/icons';
 import { Slider } from '@mui/material';
+import { CChart } from '@coreui/react-chartjs'
 import styles from './styles.module.scss'
 
 const { Title } = Typography;
 
 const Dashboard = () => {
-  function formatter(value) {
-    return `${value}%`;
-  }
+ 
   return (
     <div>
       <Row gutter={[16, 16]} className={styles.dahsboard}>
@@ -29,16 +28,73 @@ const Dashboard = () => {
               <Col span={24} style={{ display: 'flex', margin: '0 auto' }}>
                 <span>
                   <p className={styles.barTitle}>4 weeks</p>
-                  <Progress type="circle" className={styles.pieChart} strokeColor='yellow' percent={55} size={100} format={(percent) => `${percent}  Possible`} />
-                </span>
+                  <CChart
+  type="doughnut"
+  style={{width:'150px',textAlign: 'center'}}
+  data={{
+    datasets: [
+      {
+        backgroundColor: ['#41B883','#ff9'],
+        data: [30,70],
+      },
+    ],
+  }}
+  options={{
+    plugins: {
+      legend: {
+        labels: {
+        //   color: getStyle('--cui-body-color'),
+        }
+      }
+    },
+  }}
+/>                </span>
                 <span>
                   <p className={styles.barTitle}>8 weeks</p>
-                  <Progress type="circle" className={styles.pieChart} strokeColor='rgb(20, 182, 2)' percent={75} size={100} format={(percent) => `${percent} Likely`} />
-                </span>
+                  <CChart
+  type="doughnut"
+  style={{width:'150px',textAlign: 'center'}}
+  data={{
+    datasets: [
+      {
+        backgroundColor: ['#41B883','#ff9'],
+        data: [70,30],
+      },
+    ],
+  }}
+  options={{
+    plugins: {
+      legend: {
+        labels: {
+        //   color: getStyle('--cui-body-color'),
+        }
+      }
+    },
+  }}
+/>                   </span>
                 <span>
                   <p className={styles.barTitle}>12 weeks</p>
-                  <Progress type="circle" className={styles.pieChart} strokeColor='rgb(20, 182, 2)' size={100} percent={90} format={() => 'Yes'} />
-                </span>
+                  <CChart
+  type="doughnut"
+  style={{width:'150px',textAlign: 'center'}}
+  data={{
+    datasets: [
+      {
+        backgroundColor: ['#41B883','#ff9'],
+        data: [90,10],
+      },
+    ],
+  }}
+  options={{
+    plugins: {
+      legend: {
+        labels: {
+        //   color: getStyle('--cui-body-color'),
+        }
+      }
+    },
+  }}
+/>                   </span>
               </Col>
             </Space>
             <Col>
@@ -101,13 +157,13 @@ const Dashboard = () => {
               <Col span={12} className={styles.guidelines}>
                 <p>Heaven Guidelines <BarChartOutlined /> </p>
               </Col>
-              <Col span={12} className={styles.notMet}><span >Not met</span></Col>
+              <Col span={12} className={styles.notMet}><span><p>Not met</p></span></Col>
             </Col>
             <Col span={24} className={styles.criteria}>
               <Col span={12} className={styles.guidelines}>
                 <p>Country state Guidlines <BarChartOutlined /> </p>
               </Col>
-              <Col span={12} className={styles.Met}><span >Met</span></Col>
+              <Col span={12} className={styles.Met}><span ><p>Met</p></span></Col>
             </Col>
             <Col span={24} className={styles.criteria}>
 

@@ -29,7 +29,7 @@ const Sidebar = () => {
           <Link style={{padding:'20px'}} to="/coppel">Coppel Office</Link>
         </Menu.Item>
         <Menu.Item style={{height:'50px'}} key="4" icon={<EnvironmentOutlined style={{fontSize:'20px'}}/>}>
-          <Link style={{padding:'20px'}} to="/la">Los Angeles Office</Link>
+          <Link style={{padding:'20px'}} to="/losangeles">Los Angeles Office</Link>
         </Menu.Item>
       </Menu>
     </Sider>
