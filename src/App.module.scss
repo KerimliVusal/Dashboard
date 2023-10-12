@@ -4,6 +4,7 @@
 }
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -30,15 +31,6 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .navLink {
   color: #233865;
   font-weight: 700;
@@ -58,7 +50,8 @@
   border-bottom: 2px solid yellow; /* Optionally, add a bottom border for emphasis */
 }
 .siteLayout{
-background: hsl(0, 0%, 100%);
+background-color: hsl(0, 0%, 100%);
+color: #fff;
 
 }
 .sitelayoutbackground{

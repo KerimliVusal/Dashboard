@@ -14,11 +14,11 @@ const { Sider } = Layout;
 
 const Sidebar = () => {
   return (
-    <Sider className={styles.sidebar} width={400} theme="light" style={{ height: '100vh' }}>
+    <Sider className={styles.sidebar} theme='light' width={400} >
       <div className={styles.sidebarHeader} >
       <h1>Heaven Diagnostics</h1>
       </div>
-      <Menu  className={styles.sidebarItems} theme="light" mode="inline" defaultSelectedKeys={['1']}>
+      <Menu  className={styles.sidebarItems}  mode="inline" defaultSelectedKeys={['1']}>
         <Menu.Item style={{height:'50px'}} key="1" icon={<DashboardOutlined  style={{fontSize:'20px'}}/>}>
           <Link style={{padding:'20px'}} to="/">Dashboard</Link>
         </Menu.Item>
